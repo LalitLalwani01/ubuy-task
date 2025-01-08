@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 function Header() {
-    const location = useLocation(); // Get the current route path
+    const location = useLocation(); 
 
     return (
         <div>

@@ -1,9 +1,9 @@
-import { useState } from "react";
-import GoogleIcon from '../assets/images/google-logo.png';
-import AppleIcon from '../assets/images/Apple_logo_black.svg';
-import FaceBookIcon from '../assets/images/facebook-new.png';
-import paypal from '../assets/images/paypal.png';
-import Header from "./Header";
+import { useState } from "react"
+import GoogleIcon from '../assets/images/google-logo.png'
+import AppleIcon from '../assets/images/Apple_logo_black.svg'
+import FaceBookIcon from '../assets/images/facebook-new.png'
+import paypal from '../assets/images/paypal.png'
+import Header from "./Header"
 
 const SignupForm = () => {
   const [isPasswordLogin, setIsPasswordLogin] = useState(false);
@@ -16,10 +16,13 @@ const SignupForm = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-md">
+        
         {/* Header */}
         <Header />
+
+        
         <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
-          {/* Email Address */}
+         
           <div>
             <label
               htmlFor="email"
@@ -63,7 +66,6 @@ const SignupForm = () => {
               </button>
             </div>
 
-            {/* Password/OTP Input Field*/}
             <div className="flex items-center mt-2">
               <input
                 type={isPasswordLogin ? "password" : "number"}
@@ -83,7 +85,6 @@ const SignupForm = () => {
             </div>
           </div>
 
-          {/* Mailing List Checkbox */}
           <div className="flex items-start">
             <input
               type="checkbox"
@@ -99,7 +100,6 @@ const SignupForm = () => {
             </label>
           </div>
 
-          {/* Captcha */}
           <div className="flex items-center space-x-2">
             <input
               type="checkbox"
@@ -111,7 +111,7 @@ const SignupForm = () => {
             </label>
           </div>
 
-          {/* Register Button */}
+         
           <button
             type="submit"
             className="w-full py-2 bg-yellow-500 text-black font-medium rounded-[0.3rem] hover:bg-yellow-600"
@@ -120,7 +120,6 @@ const SignupForm = () => {
           </button>
         </form>
 
-        {/* Terms and Conditions */}
         <p className="mt-4 text-xs text-gray-500 text-center">
           By continuing, you agree to Ubuy&apos;s{" "}
           <a href="#" className="text-blue-500 hover:underline">
@@ -128,7 +127,7 @@ const SignupForm = () => {
           </a>
         </p>
 
-        {/* Social Login */}
+       
         <div className="mt-6">
           <button
             type="button"
